@@ -3,7 +3,7 @@
 ## 1. 🎯 Objectif
 Installer et configurer un serveur VoIP avec Asterisk 18 sur Ubuntu permettant des appels internes entre 2 utilisateurs via le protocole SIP.
 
-## Installation de Asterisk 20
+## 2. Installation de Asterisk 20
 Il faut d'abord faire la mise à jour du système.
 ```
 sudo apt update && sudo apt upgrade
@@ -25,7 +25,7 @@ Pour accéder à la console Asterisk :
 ````
 sudo asterisk -rvv
 ````
-## 2. ⚙️ Configuration des comptes pjsip
+## 3. ⚙️ Configuration des comptes pjsip
 ### 📁 Emplacement des fichiers de configuration de base 
 
 Les fichiers de conf essentiels sont :
@@ -96,7 +96,7 @@ La config qu'il faut mettre est :
 exten => 6001,1,Dial(PJSIP/6001,20)
 exten => 6002,1,Dial(PJSIP/6002,20)
 ````
-## 🔄 3. Redémarrage du serveur 
+## 🔄 4. Redémarrage du serveur 
 ````
 sudo systemctl restart asterisk
 ````
@@ -110,7 +110,7 @@ En faisant  :
 sip reload
 dialplan reload
 ````
-## 📱 4. Configuration des clients (Softphone)
+## 📱 5. Configuration des clients (Softphone)
 
 Différent logiciels sont utilisables pour la configuration des clients. 
 Celui que nous utilisons est <a href="https://www.linphone.org/home/">Linphone</a>
