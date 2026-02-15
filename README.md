@@ -1,7 +1,7 @@
 # 📞 Mini infrastructure VoIP avec Asterisk 
 
 ## 1. 🎯 Objectif
-Installer et configurer un serveur VoIP avec Asterisk 18 sur Ubuntu permettant des appels internes entre 2 utilisateurs via le protocole SIP.
+Installer et configurer un serveur VoIP avec Asterisk  sur Ubuntu permettant des appels internes entre 2 utilisateurs via le protocole SIP.
 
 ## 2. Installation de Asterisk 
 Il faut d'abord faire la mise à jour du système.
